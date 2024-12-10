@@ -3,7 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
     <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="titleBar">
+        <div id="leftTitle">
+          <img
+            class="icon"
+            src="./images/calculator_icon.png"
+            alt="calculator icon"
+          />
+          <span id="calculatorLabel">Calculator</span>
+        </div>
+        <div id="windowButtons">
+          <div id="minimizeButton">&horbar;</div>
+          <div id="maximizeButton">&#x25A2;</div>
+          <div id="closeButton">&#x2715;</div>
+        </div>
+      </div>
+      <div id="display">
+        <div id="header">
+          <span>&#9776;</span><span>Standard</span>
+          <img src="./images/change.png" />
+        </div>
+        <div id="results">0</div>
+      </div>
+      <div id="specialFunctions">
+        <span class="grayed">MC</span><span class="grayed">MR</span
+        ><span>M+</span><span>M-</span><span>MS</span
+        ><span class="grayed">M</span>
+      </div>
+      <div id="buttonsContainer">
+        <div id="row1" class="row">
+          <div class="buttons seventySeven">%</div>
+          <div class="buttons seventySix">CE</div>
+          <div class="buttons seventySeven">C</div>
+          <div class="buttons seventySix">⌫</div>
+        </div>
+        <div id="row2" class="row">
+          <div class="buttons seventySeven">
+            <img src="./images/1overx.png" alt="1overx" />
+          </div>
+          <div class="buttons seventySix">x&sup2;</div>
+          <div class="buttons seventySeven">
+            <img src="./images/2sqrtx.png" alt="2sqrtx" />
+          </div>
+          <div class="buttons seventySix">&divide;</div>
+        </div>
+        <div id="row3" class="row">
+          <div class="buttons">7</div>
+          <div class="buttons">8</div>
+          <div class="buttons seventyFour">9</div>
+          <div class="buttons end seventySix">&#x2715;</div>
+        </div>
+        <div id="row4" class="row">
+          <div class="buttons">4</div>
+          <div class="buttons">5</div>
+          <div class="buttons seventyFour">6</div>
+          <div class="buttons end seventySix">&horbar;</div>
+        </div>
+        <div id="row5" class="row">
+          <div class="buttons">1</div>
+          <div class="buttons">2</div>
+          <div class="buttons seventyFour">3</div>
+          <div class="buttons end seventySix">+</div>
+        </div>
+        <div id="row6" class="row">
+          <div class="buttons">
+            <img src="./images/plusminus.png" alt="plusminus" />
+          </div>
+          <div class="buttons">0</div>
+          <div class="buttons seventyFour">.</div>
+          <div class="buttons equals seventySix">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
