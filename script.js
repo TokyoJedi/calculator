@@ -7,6 +7,25 @@
 let num1 = null;
 let operator = null;
 let num2 = null;
+let displayValue = null;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const allButtons = document.getElementsByClassName('buttons');
+
+    Array.from(allButtons).forEach((value, index) => {
+        value.addEventListener("mousedown", (e) => {
+            // console.log(e.target.textContent);
+            displayValue = e.target.textContent;
+            updateDisplay(displayValue);
+        })
+    })
+})
+
+const updateDisplay = (value) => {
+    const resultElement = document.querySelector('#results');
+    resultElement.textContent = value;
+
+}
 
 const operate = (num1, operator, num2) => {
     return operator(num1, num2)
