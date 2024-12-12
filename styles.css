@@ -101,6 +101,7 @@ img.icon {
 
 #results {
   display: flex;
+  flex-wrap: nowrap;
   /* flex: 1 1 0; */
   margin: 0 10px 10px 0;
   color: #fff;
@@ -181,8 +182,9 @@ img.icon {
   background-color: rgb(50, 50, 50);
 }
 
-#row1 > *:hover,
-#row2 > *:hover {
+#row1 > *:hover:nth-of-type(3),
+#row1 > *:hover:nth-of-type(4),
+#row2 > *:hover:nth-of-type(4) {
   background-color: hsl(0, 0%, 24%);
 }
 
@@ -215,4 +217,23 @@ img.icon {
 
 .equals:hover {
   background-color: rgba(78, 77, 88, 0.9);
+}
+
+.crossed {
+  background: linear-gradient(
+      to top left,
+      rgba(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) calc(50% - 0.8px),
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) calc(50% + 0.8px),
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) calc(50% - 0.8px),
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) calc(50% + 0.8px),
+      rgba(0, 0, 0, 0) 100%
+    );
 }
